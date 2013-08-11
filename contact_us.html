@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- YOU ARE IN: translation/index.html -->
+	<meta charset="utf-8">
+	<meta name="parent communication" content="easy parent communication">
+	<meta name="keywords" content="parents, teachers, communication, translation">
+
+	<title>translation</title>
+
+	<style type="text/css">
+	
+	
+		.standard_input {
+			background: white;	
+			padding: 5px 10px;
+			color: grey;
+			border: solid 1px black;
+			font-size: 15px;
+			width: 400px;
+			margin-top: 10px;
+			margin-left: 50px;
+		}
+
+		.customer_comments #comments{
+			width: 60%;
+			min-height: 200px;
+			margin-left: 200px;
+			margin-top:40px;
+		}
+		
+
+		textarea{
+			font-family: "main_font";
+		}
+
+		.submit_button{
+			background-color: grey;
+			width: 400px;
+			padding:10px;
+			color: white;
+			font-family: "main_font";
+			border-radius: 2px;
+			margin-top: 50px;
+			margin-left: 310px;
+
+		}
+
+		.submit_button:hover{
+			background-color: white;
+			color:grey;
+			border:2px solid grey;
+		}
+
+	</style>
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header" class="float_container">
+			<img src="images/logo1.jpeg"/>
+			<h1>The Language Liaison</h1>
+			<ul>
+				<li><a href="index.html">home</a></li>
+				<li><a href="what_is_it.html">what is it</a></li>
+				<li><a href="use_it.html">use it</a></li>
+				<li><a href="contact_us.html"class="active_state">contact us</a></li>
+			</ul>
+		</div>
+		
+
+		<div id="contact">
+			<h1>Questions? Comments! Feedback. Ready to Start :)</h1>
+			<div class="customer_info">
+				<form method="post" action="contact.php">
+				<input type="text" id="full_name" name="full_name" class="standard_input" placeholder="full name"/>
+				<input type="email" id="email" name="email" class="standard_input" placeholder="email"/>
+			</div>
+			<div class="customer_comments">
+			<form method="post" action="contact.php">
+				<textarea name="comments" id="comments" class="standard_input" placeholder="comments"></textarea>
+			</div>
+			<div class="break">
+				<input type="submit" value="submit the form" class="submit_button"/>
+			</div>
+
+			</form>
+			
+
+		</div>
+			
+		
+	</div><!-- end wrapper --> 
+</body>
+</html>
